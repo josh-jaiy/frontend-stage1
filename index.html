@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stage 1 Project – Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Page header with navigation links to other pages. -->
+    <header>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Profile card fits naturally below as an author/owner section -->
+      <article class="profile-card" data-testid="test-profile-card">
+        <div class="profile-container">
+          <figure class="profile-avatar">
+            <img
+              src="avatar.jpg"
+              alt="Photograph of Joseph Ndagi Yisa"
+              data-testid="test-user-avatar"
+            />
+          </figure>
+          <div class="profile-info">
+            <header>
+              <h2 data-testid="test-user-name">Joseph Ndagi Yisa</h2>
+            </header>
+            <p class="bio" data-testid="test-user-bio">
+              Joseph is passionate about building secure, scalable systems and
+              contributing to open-source projects—values that strongly resonate
+              with HNG’s engineering culture and mission.
+            </p>
+
+            <p class="current-time">
+              <time data-testid="test-user-time"></time>
+            </p>
+
+            <nav class="social-links">
+              <ul data-testid="test-user-social-links">
+                <li>
+                  <a
+                    href="https://x.com/JaiyJosh/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="test-user-social-twitter"
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://linkedin.com/in/joseph-yisa-ndagi-b8baa6216/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="test-user-social-linkedin"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/josh-jaiy/josh-jaiy/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="test-user-social-github"
+                    >GitHub</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <section class="hobbies">
+              <h3>Hobbies</h3>
+              <ul data-testid="test-user-hobbies">
+                <li>Reading</li>
+                <li>Writing and maintaining open-source code</li>
+                <li>Playing computer games</li>
+              </ul>
+            </section>
+
+            <section class="dislikes">
+              <h3>Dislikes</h3>
+              <ul data-testid="test-user-dislikes">
+                <li>Spam emails</li>
+                <li>Procrastination</li>
+                <li>Poor user interfaces</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="year"></span> Stage 1 Project. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // Update the year dynamically for the footer.
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

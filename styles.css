@@ -1,0 +1,344 @@
+/*
+ * Global styles for the Stage 1 multi-page application.
+ * Includes unified styling for the Profile Card, Home Card,
+ * Contact Form, and About sections.
+ * Responsive, accessible, and consistent across all pages.
+ */
+
+/* =============================
+   RESET AND BASE SETUP
+============================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  color: #333;
+  background-color: #f4f5f7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =============================
+   HEADER AND NAVIGATION
+============================= */
+header {
+  background-color: #004d40;
+  color: #fff;
+  padding: 1rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover,
+header nav a:focus {
+  text-decoration: underline;
+}
+
+/* =============================
+   MAIN CONTAINER
+============================= */
+main {
+  flex: 1;
+  padding: 1rem;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* =============================
+   FOOTER
+============================= */
+footer {
+  background-color: #eeeeee;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+/* =============================
+   HOME PAGE CARD
+============================= */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card h1 {
+  margin-bottom: 0.5rem;
+  color: #004d40;
+  text-align: center;
+}
+
+.card p {
+  text-align: center;
+  max-width: 600px;
+}
+
+/* =============================
+   PROFILE CARD
+============================= */
+.profile-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  align-items: center;
+}
+
+.profile-avatar img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #004d40;
+}
+
+.bio {
+  margin: 0;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.current-time {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Social links */
+.social-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #0073e6;
+  position: relative;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+  text-decoration: underline;
+}
+
+.social-links a:focus {
+  outline: 2px solid #0051a3;
+  outline-offset: 2px;
+}
+
+/* Hobbies & Dislikes */
+.hobbies h3,
+.dislikes h3 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.1rem;
+  color: #004d40;
+}
+
+.hobbies ul,
+.dislikes ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+/* =============================
+   CONTACT FORM
+============================= */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 6rem;
+}
+
+.contact-form button {
+  background-color: #004d40;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  margin-top: 0.5rem;
+}
+
+.contact-form button:hover,
+.contact-form button:focus {
+  background-color: #00695c;
+}
+
+/* =============================
+   FORM VALIDATION FEEDBACK
+============================= */
+.error-input {
+  border-color: #d32f2f;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.success-message {
+  padding: 1rem;
+  border: 1px solid #2e7d32;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+}
+
+/* =============================
+   ABOUT PAGE SECTIONS
+============================= */
+.about-section {
+  margin-bottom: 2rem;
+}
+
+.about-section h2 {
+  color: #004d40;
+  margin-bottom: 0.5rem;
+}
+
+.about-section p,
+.about-section ul {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* =============================
+   RESPONSIVE DESIGN
+============================= */
+
+/* Profile and Card adjustments on medium screens */
+@media (min-width: 600px) {
+  .card {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .card img {
+    width: 200px;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+
+  .profile-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  /* Make only the user's name white, same as nav text */
+  .profile-info h2 {
+    color: #ffffff;
+    background-color: transparent;
+  }
+
+  .profile-avatar {
+    margin-right: 1.5rem;
+  }
+}
+
+/* Tablet layout enhancements */
+@media (min-width: 768px) {
+  header nav ul {
+    gap: 2rem;
+  }
+
+  .contact-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contact-form .form-group {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form .form-group.full-width {
+    flex-basis: 100%;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  main {
+    padding: 2rem;
+  }
+}

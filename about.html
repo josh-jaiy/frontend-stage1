@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me – Stage 1 Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main data-testid="test-about-page">
+      <h1>About Me</h1>
+      <!-- Bio Section -->
+      <section class="about-section" data-testid="test-about-bio">
+        <h2>Biography</h2>
+        <p>
+          I am a front‑end developer and researcher committed to creating
+          inclusive digital experiences. My academic training in computer
+          science has given me a strong foundation in software engineering and
+          user‑centred design. Over the years I have taught web development
+          courses, worked on collaborative research projects, and consulted for
+          organisations seeking to improve their digital accessibility. When I
+          design and build websites, I strive to use semantic HTML and
+          progressive enhancement so that everyone can access the content,
+          regardless of their device or assistive technology.
+        </p>
+      </section>
+
+      <!-- Goals Section -->
+      <section class="about-section" data-testid="test-about-goals">
+        <h2>Goals in this Programme</h2>
+        <p>
+          My primary objective in participating in this program is to refine my
+          proficiency with modern front‑end frameworks while preserving a focus
+          on accessible and maintainable code. Specifically, I aim to
+        </p>
+        <ul>
+          <li>deeply understand responsive design patterns and how they can be applied without relying on heavy frameworks,</li>
+          <li>develop robust client‑side validation techniques that complement server‑side checks, ensuring that forms are inclusive and user friendly,</li>
+          <li>explore emerging CSS features such as container queries to make layouts more adaptable, and</li>
+          <li>contribute to the broader conversation on digital accessibility through research and teaching.</li>
+        </ul>
+      </section>
+
+      <!-- Confidence Section -->
+      <section class="about-section" data-testid="test-about-confidence">
+        <h2>Areas of Low Confidence</h2>
+        <p>
+          Despite my experience, there remain areas where I seek to grow. I
+          occasionally struggle with intricate animations and transitions,
+          particularly when balancing performance with visual richness. In
+          addition, while I understand the fundamentals of progressive web apps
+          (PWAs), I am less confident in implementing service workers and
+          offline caching strategies. Part of my professional development plan
+          involves dedicating time to master these concepts so that I can build
+          applications that are both engaging and resilient. Recognising gaps
+          in one’s knowledge is the first step toward addressing them.
+        </p>
+      </section>
+
+      <!-- Note to Future Self Section -->
+      <section class="about-section" data-testid="test-about-future-note">
+        <h2>Note to Future Self</h2>
+        <p>
+          As you continue your journey, remember that technology evolves
+          rapidly but the fundamentals remain constant. Prioritise clear
+          semantics and accessibility from the outset of every project. Do not
+          let the allure of new libraries distract you from the core principles
+          of web development: clean markup, readable stylesheets, and
+          unobtrusive scripts. Keep a research journal to document challenges
+          and breakthroughs; future you will appreciate the record of growth.
+        </p>
+      </section>
+
+      <!-- Extra Thoughts Section -->
+      <section class="about-section" data-testid="test-about-extra">
+        <h2>Extra Thoughts</h2>
+        <p>
+          Participating in this stage of the program has reinforced my belief
+          that accessible design is not an afterthought but a core requirement of
+          professional web development. Building a contact form that validates
+          input while communicating errors through ARIA attributes illustrates
+          how thoughtful engineering can make a profound difference to users.
+          The process also served as a reminder that responsive design is
+          achieved through careful consideration of layout, typography, and
+          spacing rather than a collection of device‑specific breakpoints.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Stage 1 Project. All rights reserved.</p>
+    </footer>
+    <script>
+      // Update the year in the footer
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
